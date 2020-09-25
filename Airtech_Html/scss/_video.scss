@@ -1,0 +1,52 @@
+/* Company Video Area css
+============================================================================================ */
+.company_video_area{
+	background: url(../img/company-bg.jpg) no-repeat scroll center center;
+	background-size: cover;
+	padding: 115px 0px 120px 0px;
+}
+.company_text{
+	margin-right: 90px;
+	.company_text_part{
+		margin-bottom: 45px;
+		&:last-child{
+			margin-bottom: 0px;
+			h4{
+				margin-bottom: 8px;
+			}
+		}
+		h4{
+			color: #fff;
+			font-size: 32px;
+			font-weight: 600;
+			margin-bottom: 18px;
+		}
+		p{
+			line-height: 26px;
+			color: #caddf5;
+			margin-bottom: 0px;
+		}
+	}
+}
+.youtube_video{
+	height: 100%;
+	position: relative;
+	&:before{
+		content: "";
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -15px;
+		background: url(../img/video-shadow.png) no-repeat scroll center center;
+		position: absolute;
+		height: 33px;
+		width: 543px;
+	}
+	iframe{
+		width: 100%;
+		min-height: 354px;
+		border-radius: 0px;
+		border: none;
+	}
+}
+/* End Company Video Area css
+============================================================================================ */

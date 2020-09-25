@@ -1,0 +1,581 @@
+/* Repair Service Area css
+============================================================================================ */
+.repair_service_area{
+	
+}
+.repair_service_inner{
+	.col-lg-3:nth-child(3){
+		.r_service_item{
+			h4{
+				padding-top: 7px;
+				bottom: 11px;
+				&:before{
+					top: -7px;
+				}
+			}
+		}
+	}
+}
+.r_service_item{
+	position: relative;
+	text-align: center;
+	h4{
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		bottom: 18px;
+		text-align: center;
+		font-size: 17px;
+		color: #fff;
+		text-transform: uppercase;
+		z-index: 3;
+		font-weight: 600;
+		text-shadow: none;
+		&:before{
+			content: "";
+			background: url(../img/service/repair-service/r-service-shap.png) no-repeat scroll center center;
+			height: 59px;
+			width: 218px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -25px;
+			z-index: -1;
+		}
+	}
+}
+.gray_service{
+	background: #edf0f1;
+}
+.service_raw_text{
+	margin-bottom: 85px;
+	h4{
+		font-size: 32px;
+		color: $blue;
+		line-height: 44px;
+		margin-bottom: 0px;
+	}
+	p{
+		font-size: 22px;
+		font-weight: 200;
+		color: $blue;
+		font-family: $open;
+		padding-left: 35px;
+		padding-right: 20px;
+		line-height: 32px;
+		margin-bottom: 0px;
+		position: relative;
+		&:before{
+			content: "";
+			height: 123px;
+			width: 1px;
+			background: #bfc6cd;
+			position: absolute;
+			left: 0px;
+			top: 5px;
+		}
+	}
+}
+/* Repair Service Area css
+============================================================================================ */
+
+/* Main Service Area css
+============================================================================================ */
+.main_service_area{
+	padding-bottom: 140px;
+	.main_title{
+		
+	}
+}
+.main_service_inner{
+	margin-bottom: -50px;
+}
+.m_service_item{
+	margin-bottom: 50px;
+	text-align: center;
+	.service_img{
+		overflow: hidden;
+		position: relative;
+		z-index: 3;
+		img{
+			transition: all 300ms ease;
+		}
+		&:before{
+			content: "";
+			background: rgba(0,0,0,.5);
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: all 300ms ease;
+			z-index: 1;
+		}
+	}	
+	.service_text{
+		border: 1px solid #e5e5e5;
+		padding: 25px 22px;
+		h4{
+			color: $blue;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		p{
+			font-size: 15px;
+			line-height: 24px;
+			margin-bottom: 14px;
+		}
+		.more_btn{
+			font-size: 15px;
+			font-family: $pop;
+			font-weight: 600;
+		}
+	}
+	&:hover{
+		.service_img{
+			&:before{
+				opacity: 1;
+			}
+			img{
+				transform: scale(1.1);
+			}	
+		}
+	}
+}
+/* End Main Service Area css
+============================================================================================ */
+
+/* Service Details Area css
+============================================================================================ */
+.service_details_area{
+	
+}
+.s_details_inner{
+	padding-left: 30px;
+	.s_details_main{
+		img{
+			margin-bottom: 50px;
+		}
+		h4{
+			font-size: 26px;
+			color: $blue;
+			margin-bottom: 15px;
+		}
+		p{
+			margin-bottom: 30px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+	}	
+}
+.s_details_main{
+	img{
+		margin-bottom: 50px;
+	}
+	h4{
+		font-size: 26px;
+		color: $blue;
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+}	
+.maintence_column{
+	margin-top: 50px;
+	margin-bottom: 55px;
+	.maintence_img{
+		
+	}
+	.maintence_text{
+		padding-left: 10px;
+		padding-right: 46px;
+		h4{
+			color: $blue;
+			font-size: 24px;
+			margin-bottom: 12px;
+		}
+		p{
+			margin-bottom: 20px;
+		}
+		.nav{
+			li{
+				margin-bottom: 7px;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+				a{
+					color: $blue;
+					font-size: 16px;
+					font-family: $open;
+				}
+				&:hover{
+					a{
+						color: $baseColor;
+					}
+				}
+			}	
+		}
+		&.p-0{
+			padding-right: 46px !important;
+		}
+	}
+}
+.award_box{
+	.col-lg-4{
+		background: #1e4875;
+		border-right: 1px solid #fff;
+		&:nth-child(2){
+			background: #ca232a;
+		}
+		&:last-child{
+			background: #176bc4;
+		}
+	}
+	.award_box_item{
+		padding: 30px 25px 40px 25px;
+		text-align: center;
+		color: #fff;
+		img{
+			margin-bottom: 20px;
+		}
+		h4{
+			font-size: 18px;
+		}
+		p{
+			margin-bottom: 0px;
+			font-size: 15px;
+			line-height: 26px;
+		}
+	}
+	&.gray_box{
+		.col-lg-4{
+			background: #fafafa;
+			border-color: #e5e5e5;
+			border-top: 1px solid #e5e5e5;
+			border-bottom: 1px solid #e5e5e5;
+			&:first-child{
+				border-left: 1px solid #e5e5e5;
+			}
+			&:nth-child(2){
+				background: #fff;
+			}
+		}
+		.award_box_item{
+			h4{
+				color: $dip;
+			}
+			p{
+				color: $pfont;
+			}
+		}
+	}
+}
+.benefit_service{
+	margin-top: 55px;
+	.main_title{
+		margin-bottom: 40px;
+		h2{
+			font-size: 24px;
+		}
+	}
+	.nav{
+		columns: 2;
+		width: 100%;
+		display: block;
+		margin-bottom: -10px;
+		li{
+			margin-bottom: 10px;
+			a{
+				position: relative;
+				padding-left: 30px;
+				font-size: 16px;
+				font-family: $open;
+				color: #999999;
+				@include transition;
+				display: block;
+				img{
+					position: absolute;
+					left: 0px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				&:hover{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}
+.left_widget{
+	margin-bottom: 50px;
+	&:last-child{
+		margin-bottom: 0px;
+	}
+}
+.list_wd{
+	.nav{
+		border-left: 3px solid $baseColor;
+		margin-bottom: 0px;
+		li{
+			border-bottom: 3px solid #fff;
+			&:last-child{
+				border-bottom: 0px;
+			}
+			a{
+				background: #f1f1f1;
+				color: $dip;
+				display: block;
+				padding-left: 22px;
+				line-height: 55px;
+				font-size: 17px;
+				font-family: $pop;
+				font-weight: 600;
+				position: relative;
+				&:before{
+					content: "";
+					width: 14px;
+					height: 1px;
+					position: absolute;
+					left: 22px;
+					top: 50%;
+					background: #fff;
+					margin-top: -1px;
+					opacity: 0;
+				}
+			}
+			&:hover, &.active{
+				a{
+					background: $baseColor;
+					color: #fff;
+					padding-left: 50px;
+					&:before{
+						opacity: 1;
+						@include transition;
+					}
+				}
+			}
+		}
+	}
+}
+.contact_wd{
+	overflow: hidden;
+	background: #176bc4;
+	.text{
+		background: #176bc4;
+		padding-left: 30px;
+		padding-right: 25px;
+		padding-bottom: 42px;
+		position: relative;
+		padding-top: 10px;
+		text-align: center;
+//		&:before{
+//			content: "";
+//			width: 0;
+//			height: 0;
+//			border-style: solid;
+//			border-width: 0 0 72px 270px;
+//			border-color: transparent transparent #176bc4 transparent;
+//			position: absolute;
+//			top: -72px;
+//			left: 0px;
+//		}
+		&:after{
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 0 20px 280px;
+			border-color: transparent transparent #0f58a6 transparent;
+			position: absolute;
+			top: -56px;
+			left: 0px;
+			transform: rotate(-14deg);
+		}
+		p{
+			color: #fff;
+			font-size: 22px;
+			line-height: 30px;
+			font-family: $pop;
+			font-weight: 500;
+			margin-bottom: 10px;
+			text-align: left;
+			span{
+				font-family: $pop;
+				font-weight: 600;
+				font-size: 28px;
+				display: block;
+			}
+		}
+		h4{
+			font-weight: bold;
+			color: #fff;
+			font-family: $pop;
+			font-size: 30px;
+			margin-bottom: 25px;
+			text-align: left;
+		}
+		.main_btn{
+			padding: 0px 30px;
+			line-height: 44px;
+		}
+	}
+}
+.l_title{
+	h3{
+		font-size: 22px;
+		font-weight: 600;
+		font-family: $pop;
+		color: $dip;
+		margin-bottom: 25px;
+	}	
+}
+.dw_wd{
+	.download_btn{
+		display: block;
+		background: $dip;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		padding: 14px 20px;
+	}
+}
+/* End Service Details Area css
+============================================================================================ */
+
+/* Repair Service Area css
+============================================================================================ */
+.repair_service_area{
+	background: #e6ecf2;
+	overflow: hidden;
+	&.bg_shadow{
+		background: #f3f3f6;
+	}
+	.repair_img{
+		overflow: hidden;
+	}
+	.rp_text{
+		max-width: 499px;
+		align-self: center;
+		h4{
+			font-size: 50px;
+			font-weight: bold;
+			color: $blue;
+			margin-bottom: 27px;
+		}
+		h6{
+			font-size: 20px;
+			font-weight: 500;
+			color: $blue;
+			margin-bottom: 0px;
+		}
+		h5{
+			font-size: 22px;
+			font-weight: 300;
+			color: $dip;
+			font-family: $lato;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 17px;
+			line-height: 26px;
+			font-family: $lato;
+			font-weight: normal;
+			margin-bottom: 37px;
+		}
+		.main_btn{
+			text-transform: none;
+			line-height: 54px;
+			padding: 0px 45px;
+			border-radius: 27px;
+			font-size: 16px;
+		}
+	}
+}
+/* End Repair Service Area css
+============================================================================================ */
+
+/* Service Slider Area css
+============================================================================================ */
+.service_slider_area{
+	background: #0e2a4e;
+	.main_title{
+		position: relative;
+		margin-bottom: 75px;
+		&:before{
+			content: "";
+			height: 1px;
+			width: 87px;
+			background: rgba(255, 255, 255, .5);
+			position: absolute;
+			left: 50%;
+			bottom: -18px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		p{
+			color: rgba(255, 255, 255, .5);
+		}
+	}
+	.service_slider{
+		margin-bottom: -50px;
+		.m_service_item{
+			background: #fff;
+		}
+		.service_arrow{
+			text-align: center;
+			margin-bottom: 50px;
+			.owl-prev{
+				margin-right: 20px;
+				&:before{
+					content: '';
+					width: 70px;
+					height: 1px;
+					background: rgba(255, 255, 255, .5);
+					position: absolute;
+					left: -90px;
+					top: 50%;
+				}
+			}
+			.owl-next{
+				&:before{
+					content: '';
+					width: 70px;
+					height: 1px;
+					background: rgba(255, 255, 255, .5);
+					position: absolute;
+					right: -90px;
+					top: 50%;
+				}
+			}
+			.owl-prev, .owl-next{
+				height: 44px;
+				width: 44px;
+				background: transparent;
+				border-radius: 50%;
+				border: 2px solid #a7afb6;
+				color: #a7afb6;
+				font-size: 22px;
+				padding: 0px;
+				text-align: center;
+				@include transition;
+				position: relative;
+				i{
+					line-height: 36px;
+				}
+				&:hover{
+					background: $baseColor;
+					border-color: $baseColor;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/* End Service Slider Area css
+============================================================================================ */

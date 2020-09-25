@@ -1,0 +1,109 @@
+/* Team Area css
+============================================================================================ */
+.our_team_area{
+	background: #f0edf7;
+	&.pad_top{
+		padding-bottom: 140px;
+	}
+	&.our_team2{
+		background: #22335d;
+	}
+}
+.our_team_inner{
+	margin-bottom: -60px;
+}
+.team_item{
+	margin-bottom: 60px;
+	.team_img{
+		position: relative;
+		overflow: hidden;
+		z-index: 3;
+		img{
+			transition: all 300ms ease;
+		}
+		&:before{
+			content: "";
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background: rgba(189,36,51,.90);
+			opacity: 0;
+			transition: all 300ms ease;
+			z-index: 1;
+		}
+		.nav{
+			position: absolute;
+			left: 0px;
+			bottom: 35px;
+			text-align: center;
+			width: 100%;
+			justify-content: center;
+			opacity: 0;
+			transition: all 500ms ease;
+			li{
+				margin-right: 10px;
+				&:last-child{
+					margin-right: 0px;
+				}
+				a{
+					display: inline-block;
+					height: 35px;
+					width: 35px;
+					border: 1px solid #fff;
+					color: #fff;
+					line-height: 35px;
+					border-radius: 50%;
+					@include transition;
+				}
+				&:hover{
+					a{
+						color: $dip;
+						border-color: $dip;
+					}
+				}
+			}
+		}
+	}
+	.team_text{
+		background: #fff;
+		max-width: 238px;
+		margin: auto;
+		text-align: center;
+		padding: 12px 10px 15px 10px;
+		margin-top: -20px;
+		position: relative;
+		z-index: 5;
+		h4{
+			margin-bottom: 0px;
+			font-size: 18px;
+			color: $dip;
+			margin-bottom: 5px;
+		}
+		h5{
+			font-family: $lato;
+			color: $pfont;
+			font-size: 16px;
+			font-weight: normal;
+			margin-bottom: 0px;
+		}
+	}
+	&:hover{
+		.team_img{
+			img{
+				transform: scale(1.1);
+			}
+			&:before{
+				opacity: 1;
+			}
+			.nav{
+				opacity: 1;
+				bottom: 58px;
+				z-index: 2;
+			}
+		}
+	}
+}
+/* End Team Area css
+============================================================================================ */

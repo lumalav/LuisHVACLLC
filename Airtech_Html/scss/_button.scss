@@ -1,0 +1,102 @@
+/* Button Area css
+============================================================================================ */
+.ab_bar_btn{
+	text-decoration: underline;
+	line-height: 50px;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0px 28px;
+	color: $baseColor;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+	align-self: center;
+	position: relative;
+	z-index: 3;
+	&:after, &:before{
+		content: "";
+		position: absolute;
+		transition: all 0.3s;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		border-radius: 5px;
+	}
+	&:before{
+		left: 0px;
+		z-index: -1;
+		opacity: 0;
+		background: $baseColor;
+		transform: scale(0.1, 1);
+	}
+	&:after{
+		transition: all 0.3s;
+		border: 1px solid #e7e7e7;
+	}
+	&:hover{
+		color: #fff; 
+		&:before{
+			opacity: 1;
+			transform: scale(1, 1);
+		}
+		&:after{
+			transform: scale(1, 0.1);
+			opacity: 0;
+		}
+	}
+}
+.more_btn{
+	text-decoration: underline;
+	font-size: 14px;
+	color: #e13535;
+	font-weight: bold;
+	font-family: $open;
+	&:hover{
+		color: $baseColor;
+		text-decoration: none;
+	}
+}
+.main_btn{
+	background: #ca232a;
+	border-radius: 3px;
+	display: inline-block;
+	color: #fff;
+	line-height: 40px;
+	border: 1px solid #ca232a;
+	padding: 0px 22px;
+	font-size: 14px;
+	font-family: $pop;
+	font-weight: 600;
+	text-transform: uppercase;
+	@include transition;
+	&:hover{
+		border-color: #ca232a;
+		background: transparent;
+		color: #ca232a;
+	}
+}
+.submit_btn{
+	background: #ca232a;
+	border-radius: 3px;
+	display: inline-block;
+	color: #fff;
+	line-height: 40px;
+	border: 1px solid #ca232a;
+	padding: 0px 22px;
+	font-size: 14px;
+	font-family: $pop;
+	font-weight: 600;
+	text-transform: uppercase;
+	@include transition;
+	outline: none !important;
+	box-shadow: none !important;
+	&:hover{
+		border-color: #ca232a;
+		background: transparent;
+		color: #ca232a;
+	}
+}
+/* End Button Area css
+============================================================================================ */

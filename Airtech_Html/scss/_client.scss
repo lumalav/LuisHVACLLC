@@ -1,0 +1,27 @@
+/* Client Service Area css
+============================================================================================ */
+.client_service_area{
+	padding: 70px 0px 60px 0px;
+	&.tips_client{
+		padding: 90px 0px 120px 0px;
+	}
+	&.client_logo{
+		padding-top: 100px;
+		padding-bottom: 130px;
+	}
+}
+.client_slider{
+	.item{
+		text-align: center;
+		display: block;
+		line-height: 100px;
+		img{
+			width: auto;
+			display: inline-block;
+			text-align: center;
+			line-height: 100px;
+		}	
+	}
+}
+/* Client Service Area css
+============================================================================================ */

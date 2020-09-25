@@ -1,0 +1,80 @@
+/* Testimonials Area css
+============================================================================================ */
+.client_testi_area{
+}
+.c_testi_slider{
+	margin-top: -25px;
+	margin-bottom: -50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	.owl-item{
+		
+	}
+	.item{
+		padding: 25px;
+		.b_testi{
+			box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.13);
+			padding: 25px 30px;
+			background: #fff;
+		}	
+	}
+}
+
+
+.testimonials_area{
+	background: #efefef;
+	&.pad_top{
+		padding-bottom: 140px;
+	}
+	.main_title{
+		margin-bottom: 100px;
+		h2{
+			margin-bottom: 20px;
+		}
+	}
+}
+.testimonials_inner{
+	margin-bottom: -105px;
+}
+.text_item_box{
+	background: #fff;
+	max-width: 330px;
+	text-align: center;
+	padding: 0px 30px;
+	margin-bottom: 105px;
+	position: relative;
+	padding-bottom: 75px;
+	img{
+		margin-top: -48px;
+	}
+	h3{
+		margin-top: 20px;
+		font-size: 16px;
+		color: $dip;
+		margin-bottom: 7px;
+	}
+	h5{
+		font-size: 14px;
+		font-family: $open;
+		font-style: italic;
+		color: #a0a0a0;
+		margin-bottom: 20px;
+		font-weight: normal;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+	i{
+		font-size: 130px;
+		color: #3d7bc3;
+		font-family: Arial;
+		font-weight: bold;
+		font-style: normal;
+		line-height: auto;
+		position: absolute;
+		bottom: 0px;
+		right: 20px;
+	}
+}
+/* End Testimonials Area css
+============================================================================================ */

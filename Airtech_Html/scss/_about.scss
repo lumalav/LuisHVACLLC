@@ -1,0 +1,324 @@
+/* About Area css
+============================================================================================ */
+.about_bar_area{
+	border-bottom: 1px solid #dbdfe3;
+	padding: 38px 0px 26px 0px;
+	background: url(../img/icon/ab-bar-bg.png) no-repeat scroll center bottom;
+}
+.about_bar_text{
+	h5{
+		font-size: 22px;
+		font-family: $pop;
+		font-weight: 300;
+		margin-bottom: 8px;
+	}
+	h4{
+		font-size: 24px;
+		color: #082650; 
+		margin-bottom: 0px;
+	}
+	.ab_bar_btn{
+		margin-left: 50px;
+		margin-top: 0px;
+	}
+}
+/* End About Area css
+============================================================================================ */
+
+/* About Text Area css
+============================================================================================ */
+.about_text_area{
+	&.service_call_in{
+		.ab_text_inner{
+			.ab_text_item{
+				margin-bottom: 5px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.contract_discount{
+				margin-top: 30px;
+			}
+		}
+	}
+}
+.ab_text_inner{
+	.ab_text_item{
+		margin-bottom: 38px;
+		h3{
+			font-size: 32px;
+			color: $blue;
+			margin-bottom: 22px;
+		}
+		p{
+			margin-bottom: 0px;
+		}
+	}
+	.ab_text_item_two{
+		h3{
+			color: $blue;
+			font-size: 26px;
+			margin-bottom: 16px;
+		}
+	}
+}
+.ab_list{
+	margin-top: 35px;
+	h4{
+		font-size: 22px;
+		color: $blue;
+	}
+	.nav{
+		li{
+			a{
+				font-size: 16px;
+				line-height: 35px;
+				color: $blue;
+				font-family: $open;
+				font-weight: normal;
+				@include transition;
+				&:hover{
+					color: $baseColor;
+				}	
+			}
+		}
+	}
+	.ab_logo{
+		vertical-align: middle;
+		align-self: center;
+		justify-content: center;
+		margin: 0px auto;
+	}
+}
+.request_service_box{
+	background: #3376ca;
+	padding: 40px 30px;
+	h3{
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+	p{
+		color: #fff;
+		font-size: 17px;
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+	.contact_us_form{
+		.form-group{
+			input{
+				height: 40px;
+				color: #989fa5;
+				font-family: $open;
+				font-weight: normal;
+				font-size: 15px;
+				@include placeholder{
+					color: #989fa5;
+					font-family: $open;
+					font-weight: normal;
+					font-size: 15px;
+				}
+			}
+			textarea{
+				color: #989fa5;
+				font-family: $open;
+				font-weight: normal;
+				font-size: 15px;
+				height: 121px;
+				@include placeholder{
+					color: #989fa5;
+					font-family: $open;
+					font-weight: normal;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+/* End About Text Area css
+============================================================================================ */
+
+/* Our Moto Area css
+============================================================================================ */
+.our_moto_area{
+	overflow: hidden;
+	background: #22335d;
+	display: flex;
+	.left_side{
+		width: calc(50% - 215px);
+		overflow: hidden;
+	}
+	.right_side{
+		width: calc(50% + 215px);
+		display: flex;
+		.moto_text{
+			margin-left: 65px;
+			max-width: 730px;
+			vertical-align: middle;
+			align-self: center;
+			h5{
+				color: #fff;
+				font-size: 26px;
+				line-height: 40px;
+				margin-bottom: 18px;
+			}
+			p{
+				font-size: 16px;
+				line-height: 26px;
+				color: #caddf5;
+				margin-bottom: 0px;
+			}
+			h4{
+				font-size: 26px;
+				color: #fff;
+				margin-bottom: 18px;
+				margin-top: 45px;
+			}
+		}
+	}
+	&.moto_two{
+		.right_side{
+			.moto_text{
+				h5{
+					span{
+						font-weight: 300;
+					}
+				}
+				h4{
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	&.moto_video{
+		.left_side{
+			position: relative;
+			z-index: 5;
+			a{
+				height: 116px;
+				width: 116px;
+				background: #bd2433;
+				border-radius: 50%;
+				display: block;
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				top: 50%;
+				transform: translateY(-50%);
+				margin: auto;
+				text-align: center;
+				line-height: 145px;
+				z-index: 3;
+				&:before{
+					content: "";
+					width: 116px;
+					height: 116px;
+					border: 1px solid #bd2433;
+					position: absolute;
+					left: 0;
+					top: 0px;
+					border-radius: 50%;
+					animation: runpulse 1.5s infinite linear;
+					z-index: -1;
+				}
+				&:after{
+					content: "";
+					width: 116px;
+					height: 116px;
+					background: rgba(189, 36, 51, 0.8);
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					border-radius: 50%;
+					z-index: -1;
+					animation: runpulse 1.5s infinite linear;
+				}
+				.play{
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 20px 0 20px 32px;
+					border-color: transparent transparent transparent #ffffff;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+/* End Our Moto Area css
+============================================================================================ */
+
+/* Emergency Area css
+============================================================================================ */
+.emergency_call_area{
+	background: #176bc5;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	.left{
+		h4{
+			color: #fff;
+			font-size: 32px;
+			font-weight: 600;
+			span{
+				font-family: $play;
+				font-style: italic;
+				font-weight: bold;
+			}
+		}
+		p{
+			font-size: 20px;
+			font-weight: 200;
+			font-family: $pop;
+			font-style: italic;
+			color: #fff;
+			margin-bottom: 0px;
+		}
+	}
+	.right{
+		vertical-align: middle;
+		align-self: center;
+		h5{
+			color: #fff;
+			background: #0264a9;
+			padding-left: 115px;
+			padding-right: 40px;
+			margin-bottom: 0px;
+			font-size: 35px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: 31px;
+			box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.31);
+		}
+	}
+}
+/* End Emergency Area css
+============================================================================================ */

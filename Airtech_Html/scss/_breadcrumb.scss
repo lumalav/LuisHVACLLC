@@ -1,0 +1,191 @@
+/* Home Banner Area css
+============================================================================================ */
+.home_banner_area{
+	background: url(../img/home-banner.jpg) no-repeat scroll center center;
+	background-size: cover;
+	padding-top: 30px;
+}
+.home_banner_inner{
+	position: relative;
+	z-index: 5;
+	.left_text{
+		padding-top: 80px;
+		h5{
+			color: #37a8f4;
+			font-family: $play;
+			font-style: italic;
+			font-weight: bold;
+		}
+		h3{
+			font-size: 44px;
+			font-family: $pop;
+			font-weight: bold;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		p{
+			font-size: 24px;
+			font-family: $pop;
+			line-height: 35px;
+			color: #fff;
+			font-weight: 300;
+			margin-bottom: 10px;
+		}
+		.tel{
+			display: block;
+			font-size: 28px;
+			color: #f7ce1f;
+			font-family: $pop;
+			font-weight: 600;
+			margin-bottom: 35px;
+		}
+		.main_btn{
+			padding: 0px 30px;
+			line-height: 46px;
+		}
+	}
+}
+
+.schedule_box{
+	background: #b2101e;
+	max-width: 310px;
+	float: right;
+	padding: 0px 27px;
+	position: relative;
+	&:before{
+		content: "";
+		background: url(../img/home-man.png) no-repeat scroll center center;
+		position: absolute;
+		left: -260px;
+		bottom: 0px;
+		width: 303px;
+		height: 508px;
+		z-index: -1;
+	}
+	img{
+		margin: auto;
+		display: block;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+	h4{
+		text-align: center;
+		color: rgba(255, 255, 255, .4);
+		font-weight: bold;
+		font-family: $play;
+		font-style: italic;
+		font-size: 40px;
+		margin-bottom: 3px;
+	}
+	h5{
+		text-align: center;
+		color: #fff;
+		font-size: 26px;
+		font-family: $pop;
+		margin-bottom: 18px;
+	}
+	.contact_us_form{
+		.form-group{
+			margin-bottom: 8px;
+			input{
+				border: 1px solid #ca525e;
+				background: #9e101e;
+				height: 40px;
+				padding: 0px 20px;
+				font-size: 15px;
+				color: #fff;
+				font-family: $open;
+				@include placeholder{
+					font-size: 15px;
+					color: #fff;
+					font-family: $open;
+				}
+			}
+			textarea{
+				border: 1px solid #ca525e;
+				background: #9e101e;
+				height: 76px;
+				padding: 10px 20px;
+				font-size: 15px;
+				color: #fff;
+				font-family: $open;
+				@include placeholder{
+					font-size: 15px;
+					color: #fff;
+					font-family: $open;
+				}
+			}
+			.submit_btn{
+				width: 100%;
+				line-height: 46px;
+				background-image: -moz-linear-gradient(90deg, rgb(251, 177, 1) 0%, rgb(247, 207, 32) 100%);
+				background-image: -webkit-linear-gradient(90deg, rgb(251, 177, 1) 0%, rgb(247, 207, 32) 100%);
+				background-image: -ms-linear-gradient( 90deg, rgb(251,177,1) 0%, rgb(247,207,32) 100%);
+				margin-top: 8px;
+				margin-bottom: 25px;
+				color: $dip;
+			}
+		}
+	}
+}
+/* End Home Banner Area css
+============================================================================================ */
+
+/* Breadcrumb Area css
+============================================================================================ */
+.breadcrumb_area{
+	background: url(../img/breadcrumb/breadcrumb-1.jpg) no-repeat scroll center center;
+	background-size: cover;
+	padding-top: 110px;
+	padding-bottom: 80px;
+	overflow: hidden;
+	.breadcrumb_inner{
+		position: relative;
+		img{
+			position: absolute;
+			right: 0px;
+			bottom: -128px;
+		}
+	}
+	h2{
+		color: #fff;
+		font-size: 44px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		position: relative;
+		z-index: 3;
+	}
+	.nav{
+		position: relative;
+		z-index: 3;
+		li{
+			font-size: 14px;
+			font-weight: 500;
+			color: #fff;
+			margin-right: 20px;
+			position: relative;
+			&:before{
+				content: "\f105";
+				font: normal normal normal 14px/1 FontAwesome;
+				position: absolute;
+				right: -12px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			a{
+				font-size: 14px;
+				font-weight: 500;
+				color: #337fd0;
+			}
+			&:last-child{
+				margin-right: 0px;
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+}
+/* End Breadcrumb Area css
+============================================================================================ */

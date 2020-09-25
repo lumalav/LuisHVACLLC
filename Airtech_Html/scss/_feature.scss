@@ -1,0 +1,750 @@
+/* Choose Contract Area css
+============================================================================================ */
+.choose_contract_area{
+	padding-bottom: 80px;
+	.contract_part{
+		.contract_text{
+			margin-right: 70px;
+			h4{
+				font-size: 32px;
+				color: $blue;
+				margin-bottom: 12px;
+			}
+			p{
+				margin-bottom: 20px;
+				&:nth-child(3){
+					margin-bottom: 0px;
+				}
+			}
+			.nav{
+				max-width: 584px;
+				width: 100%;
+				margin-bottom: -5px;
+				display: block;
+				columns: 2;
+				margin-left: -20px;
+				margin-top: 35px;
+				li{
+					margin-bottom: 5px;
+					display: inline-block;
+					margin-left: 20px;
+					a{
+						font-size: 17px;
+						color: $blue;
+						font-weight: 600;
+						font-family: $pop;
+						position: relative;
+						padding-left: 35px;
+						display: block;
+						img{
+							position: absolute;
+							left: 0px;
+							top: 4px;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.contract_discount{
+	background: #eff0f0;
+	text-align: center;
+	position: relative;
+	padding-bottom: 30px;
+	&:before{
+		content: "";
+		width: 92%;
+		height: 90%;
+		border: 1px dashed rgba(0,0,0,.4);
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	h4{
+		background: #bd2433;
+		color: #fff;
+		margin-bottom: 0px;
+		padding: 20px 0px 16px 0px;
+		font-size: 22px;
+		font-style: italic;
+		span{
+			font-size: 28px;
+		}
+	}
+	h5{
+		color: #152242;
+		font-size: 18px;
+		font-weight: 500;
+		margin-top: 22px;
+		margin-bottom: 13px;
+		line-height: 27px;
+	}
+	p{
+		font-size: 15px;
+		font-weight: 500;
+		color: #152242;
+		opacity: .7;
+		font-family: $pop;
+		margin-bottom: 18px;
+	}
+	a{
+		background: #1f65bd;
+		display: inline-block;
+		padding: 0px 20px;
+		line-height: 38px;
+		color: #fff;
+		font-style: italic;
+		font-size: 16px;
+		font-family: $pop;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	h6{
+		font-weight: normal;
+		color: #9d9d9d;
+		font-size: 14px;
+		margin-bottom: 8px;
+	}
+}
+.print{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-family: $pop;
+	font-weight: normal;
+	color: #e31b1e;
+	text-decoration: underline;
+	margin-top: 14px;
+	margin-bottom: 16px;
+}
+.more{
+	display: block;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: $pop;
+	color: #7a7a7a;
+}
+.service_part{
+	margin-top: 15px;
+	.service_contract_text{
+		border-top: 1px solid #dbdbdb;
+		margin-right: 70px;
+		padding-top: 40px;
+		margin-top: 30px;
+		h4{
+			font-size: 24px;
+			color: $dip;
+			margin-bottom: 13px;
+		}
+		p{
+			
+		}
+		.nav{
+			max-width: 100%;
+			width: 100%;
+			margin-bottom: -8 px;
+			display: block;
+			columns: 2;
+			margin-left: -20px;
+			margin-top: 35px;
+			li{
+				margin-bottom: 8px;
+				display: inline-block;
+				margin-left: 20px;
+				width: 100%;
+				a{
+					font-size: 16px;
+					color: $dip;
+					font-family: $open;
+					position: relative;
+					padding-left: 35px;
+					display: block;
+					img{
+						position: absolute;
+						left: 0px;
+						top: 4px;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+.box_testi{
+	.title{
+		background: #0062a3;
+		vertical-align: middle;
+		display: block;
+		h4{
+			background: #bd2433;
+			display: inline-block;
+			margin-bottom: 0px;
+			line-height: 60px;
+			padding: 0px 40px 0px 35px;
+			color: #fff;
+			font-size: 22px;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				right: -45px;
+				top: 0px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 60px 0 0 45px;
+				border-color: transparent transparent transparent #bd2433;
+			}
+		}
+	}
+	.box_testi_gray{
+		background: #ebebeb;
+		padding: 20px;
+		.box_testi_slider{
+			background: #fff;
+			padding: 30px 30px 25px 30px;
+		}
+	}
+}
+.b_testi{
+	h3{
+		color: #bd2433;
+		font-weight: bold;
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+	p{
+		color: #1c425d;
+		margin-bottom: 13px;
+	}
+	h5{
+		font-family: $open;
+		font-weight: bold;
+		color: #1f65bd;
+		font-size: 14px;
+		margin-bottom: 18px;
+	}
+	.nav{
+		li{
+			margin-right: 5px;
+			a{
+				font-size: 20px;
+				color: #fbbc19;
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+	}
+}
+.choose_two{
+	.service_part{
+		margin-top: 0px;
+		.service_contract_text{
+			margin-top: 0px;
+			padding-top: 0px;
+			border: none;
+			h4{
+				font-size: 32px;
+			}
+			p{
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+.free_consultation{
+	background: #ebf1f4;
+	margin-left: -51px;
+	border: 1px solid #dcdcdc;
+	overflow: hidden;
+	.title_top{
+		background: #074873;
+		padding: 0px 15px;
+		text-align: center;
+		color: #fff;
+		padding-top: 20px;
+		position: relative;
+		padding-bottom: 15px;
+		&:before{
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 25px 210.5px 0 210.5px;
+			border-color: #074873 transparent transparent transparent;
+			position: absolute;
+			left: 0px;
+			bottom: -25px;
+		}
+		h5{
+			font-size: 16px;
+			font-family: $pop;
+			font-weight: normal;
+			color: rgba(255, 255, 255, .5);
+			margin-bottom: 10px;
+		}
+		h3{
+			font-size: 26px;
+			margin-bottom: 0px;
+		}
+	}	
+	.contact_us_form{
+		padding: 0px 22px 50px 22px;
+		margin-top: 70px;
+		margin-left: -9px;
+		margin-right: -9px;
+		.col-lg-6, .col-lg-12{
+			padding-left: 9px;
+			padding-right: 9px;
+		}
+		.form-group{
+			input{
+				height: 40px;
+			}
+			textarea{
+				height: 132px;
+			}
+			.submit_btn{
+				display: block;
+				width: 100%;
+				background: #e43838;
+				border-color: #e43838;
+				height: 48px;
+				&:hover{
+					background: #fff;
+					color: #e43838;
+				}
+			}
+		}
+	}
+}
+/* End Choose Contract Area css
+============================================================================================ */
+
+/* Replacement Area css
+============================================================================================ */
+.replacement_area{
+	background: #13213b;
+	border-top: 6px solid #bb202e;
+	.media{
+		.d-flex{
+			padding-right: 86px;
+			img{
+				margin-top: -45px;
+			}
+		}
+		.media-body{
+			vertical-align: middle;
+			align-self: center;
+			h4{
+				color: #fff;
+				font-size: 28px;
+				margin-bottom: 13px;
+			}
+			h5{
+				margin-bottom: 0px;
+				font-size: 28px;
+				font-family: $play;
+				font-weight: bold;
+				font-style: italic;
+				color: #fff;
+				a{
+					font-size: 30px;
+					font-weight: bold;
+					font-style: italic;
+					font-family: $pop;
+					color: #d4482e;
+				}
+			}
+		}
+	}
+}
+/* End Replacement Area css
+============================================================================================ */
+
+/* End Replacement Area css
+============================================================================================ */
+.finance_area{
+	padding-bottom: 140px;
+	.finance_inner{
+		h2{
+			color: $blue;
+			font-size: 32px;
+			font-family: $pop;
+			margin-bottom: 22px;
+		}
+		p{
+			margin-bottom: 30px;
+		}
+		.big{
+			font-size: 20px;
+			font-family: $play;
+			font-weight: normal;
+			margin-top: 50px;
+			& + .big{
+				margin-top: 30px;
+			}
+		}
+		img{
+			margin-top: 50px;
+		}
+	}
+}
+/* End Replacement Area css
+============================================================================================ */
+
+/* Special Area css
+============================================================================================ */
+.specials_area{
+	padding-bottom: 140px;
+}
+.specials_inner{
+	.coupons_list{
+		.main_title{
+			margin-bottom: 15px;
+		}
+		.nav{
+			li{
+				a{
+					position: relative;
+					padding-left: 30px;
+					line-height: 38px;
+					font-family: $open;
+					font-size: 16px;
+					color: $pfont;
+					@include transition;
+					display: block;
+					img{
+						position: absolute;
+						left: 0px;
+						top: 20px;
+						transform: translateY(-50%);
+					}
+					&:hover{
+						color: $baseColor;
+					}
+				}
+			}
+		}
+	}
+}
+.free_estimate{
+	margin-top: 45px;
+	h3{
+		font-size: 20px;
+		color: $blue;
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+}
+.free_estimate_inner{
+	
+}
+.free_es_item{
+	border: 2px dashed #7d7d7d;
+	margin-top: 50px;
+	padding: 30px 0px;
+	.media{
+		.d-flex{
+			max-width: 275px;
+			width: 100%;
+			text-align: center;
+			img{
+				display: block;
+				margin: auto;
+			}
+		}
+		.media-body{
+			align-self: center;
+			h4{
+				color: $baseColor;
+				font-size: 32px;
+				margin-bottom: 15px;
+			}
+			p{
+				line-height: 26px;
+				font-size: 16px;
+				color: $dip;
+				font-family: $pop;
+				font-weight: 600;
+				margin-bottom: 15px;
+			}
+			h6{
+				font-family: $open;
+				font-weight: normal;
+				font-size: 15px;
+				color: $pfont;
+				margin-bottom: 0px;
+			}
+		}
+	}
+	&:nth-child(odd){
+		.media{
+			.d-flex{
+				img{
+					margin-bottom: -30px;
+				}
+			}
+		}
+	}
+}
+/* End Special Area css
+============================================================================================ */
+
+/* Tips Area css
+============================================================================================ */
+.tips_area{
+	.main_title{
+		margin-bottom: 40px;
+		h2{
+			margin-bottom: 20px;
+		}
+	}
+}
+.tips_list_inner{
+	border-bottom: 1px solid #d6d6d6;
+	p{
+		margin-top: 100px;
+		font-size: 32px;
+		line-height: 46px;
+		color: $blue;
+		font-family: $play;
+		font-style: italic;
+		max-width: 765px;
+		padding-bottom: 90px;
+	}
+}
+.tips_artical{
+	margin-bottom: 55px;
+	&:last-child{
+		margin-bottom: 0px;
+	}
+	h4{
+		color: $blue;
+		font-size: 24px;
+		font-weight: normal;
+		margin-bottom: 15px;
+	}
+	.nav{
+		li{
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			a{
+				font-size: 18px;
+				color: $blue;
+				font-family: $pop;
+			}
+		}
+	}
+}
+/* End Tips Area css
+============================================================================================ */
+
+/* Repair System Area css
+============================================================================================ */
+.repair_system_area{
+	.center_title_big{
+		position: relative;
+		margin-bottom: 86px;
+		&:before{
+			content: "";
+			height: 2px;
+			width: 96px;
+			background: #176bc5;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -28px;
+		}
+	}
+}
+.repair_system_inner{
+	
+}
+.rp_box_item{
+	border: 1px solid #dbdbdb;
+	text-align: center;
+	border-radius: 3px;
+	padding-top: 25px;
+	h4{
+		font-size: 20px;
+		color: $blue;
+		margin-bottom: -7px;
+	}
+	img{
+		margin-bottom: 15px;
+	}
+	.icon{
+		height: 50px;
+		width: 50px;
+		background: #fff;
+		border-radius: 50%;
+		display: inline-block;
+		text-align: center;
+		margin: 0px auto 0px;
+		position: relative;
+		bottom: -24px;
+		i{
+			height: 40px;
+			width: 40px;
+			background: #fff;
+			border-radius: 50%;
+			color: $pfont;
+			line-height: 36px;
+			margin-top: 5px;
+			border: 1px solid #e6e6e6;
+			@include transition;
+		}
+	}
+	&:hover{
+		box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.13);
+		.icon{
+			i{
+				background: $baseColor;
+				color: #fff;
+				border-color: $baseColor;
+			}
+		}
+	}
+}
+/* End Repair System Area css
+============================================================================================ */
+
+/* Family Air Area css
+============================================================================================ */
+.family_area{
+	background: url(../img/family-img.jpg) no-repeat fixed center center;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 85px;
+	z-index: 2;
+	&:before{
+		content: "";
+		background: rgba(0, 0, 0, .45);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	.family_air_text{
+		h4{
+			color: #fff;
+			font-size: 45px;
+			line-height: 55px;
+			margin-bottom: 20px;
+			span{
+				font-family: $play;
+				font-style: italic;
+				font-weight: bold;
+				position: relative;
+				&:before{
+					content: "";
+					width: 100%;
+					height: 1px;
+					background: #fff;
+					position: absolute;
+					left: 0px;
+					bottom: 4px;
+				}
+			}
+		}
+		p{
+			font-size: 24px;
+			line-height: 32px;
+			color: #fff;
+			font-weight: 300;
+			margin-bottom: 35px;
+		}
+		.main_btn{
+			background: #55b6c7;
+			border-color: #55b6c7;
+			text-transform: capitalize;
+			line-height: 45px;
+			border-radius: 22.5px;
+			&:hover{
+				background: $baseColor;
+				color: #fff;
+				border-color: $baseColor;
+			}
+		}
+	}
+}
+/* End Family Air Area css
+============================================================================================ */
+
+/* Experience Area css
+============================================================================================ */
+.experience_area{
+	
+}
+.experience_inner{
+	.experience_text{
+		margin-right: 35px;
+		h3{
+			font-size: 36px;
+			color: $blue;
+			line-height: 43px;
+			margin-bottom: 20px;
+		}
+		h5{
+			font-size: 20px;
+			font-weight: 300;
+			font-style: italic;
+			font-family: $open;
+			color: #1356b1;
+			margin-bottom: 15px;
+		}
+		p{
+			margin-bottom: 40px;
+		}
+		.ex_item_inner{
+			.media{
+				position: relative;
+				&:before{
+					content: "";
+					height: 40px;
+					width: 1px;
+					background: #d9d9d9;
+					position: absolute;
+					right: 0px;
+					top: 3px;
+				}
+				.d-flex{
+					padding-right: 16px;
+				}
+				.media-body{
+					h4{
+						font-size: 16px;
+						color: #333333;
+					}
+					h6{
+						font-size: 15px;
+						font-style: italic;
+						color: #868686;
+						font-weight: normal;
+						font-family: $open;
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+		.main_btn{
+			margin-top: 47px;
+			line-height: 46px;
+		}
+	}
+}
+/* End Experience Area css
+============================================================================================ */
