@@ -9,12 +9,18 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/linearicons/style.css">
         <link rel="stylesheet" href="vendors/stroke-icon/style.css">
         
         <!-- Extra Plugin CSS -->
         <link href="vendors/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="vendors/time-date-picker/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+        <link href="vendors/lightbox/simpleLightbox.css" rel="stylesheet">
+        <link href="vendors/nice-selector/css/nice-select.css" rel="stylesheet">
+        <link href="vendors/popup/magnific-popup.css" rel="stylesheet">
+        <!-- Rev slider css -->
+        <link href="vendors/revolution/css/settings.css" rel="stylesheet">
+        <link href="vendors/revolution/css/layers.css" rel="stylesheet">
+        <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
         
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
@@ -24,44 +30,30 @@
         
         
         <!--================Header Area =================-->
-        <header class="header_area">
-        	<div class="logo_part">
+        <header class="header_area menu_four">
+        	<div class="top_bar">
         		<div class="container">
-        			<div class="logo_inner justify-content-between d-flex">
+        			<div class="d-flex justify-content-between">
         				<div class="left">
-        					<a href="#"><img style="width:200px;" src="img/logo.png" alt=""></a>
-        				</div>
-        				<div class="right">
-        					<div class="media">
-        						<div class="d-flex">
-        							<a href="get-appointment.html"><img src="img/icon/calender.png" alt=""></a>
-        						</div>
-        						<div class="media-body">
-        							<a href="get-appointment.html"><h3>Schedule an <br />appointment</h3></a>
-        						</div>
-        					</div>
-        					<div class="media">
-        						<div class="d-flex">
-        							<img src="img/icon/phone.png" alt="">
-        						</div>
-        						<div class="media-body">
-        							<h4>Emergency 24 /7</h4>
-        							<a href="tel:18004567890"><h5>1800 456 7890</h5></a>
-        						</div>
-        					</div>
-        				</div>
+							<h5><i class="fa fa-phone"></i>Need help? Call Us Now :  <a href="tel:01676790690">407 325 9494</a></h5>
+						</div>
+						<div class="right">
+							<ul class="nav">
+								<li><a href="get-appointment.html">Schedule An Appointment</a></li>
+							</ul>
+						</div>
         			</div>
         		</div>
         	</div>
         	<div class="main_menu">
         		<div class="container">
 					<nav class="navbar navbar-expand-lg navbar-light bg-light">
-						<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a class="navbar-brand" href="index.html"><img src="img/logo-2.png" alt=""></a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span></span> 
 						</button>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="nav navbar-nav mr-auto">
+							<ul class="nav navbar-nav ml-auto">
 								<li class="dropdown submenu">
 									<a class="dropdown-toggle" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Home </a>
 									<i class="fa fa-angle-down mobile_dropdown" aria-hidden="true" data-toggle="dropdown"></i>
@@ -107,9 +99,6 @@
 								<li><a href="gallery.html">Gallery</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								<li class="request_btn"><a href="get-appointment.html">Service Request </a></li>
-							</ul>
 						</div>
 					</nav>
 				</div>
@@ -118,78 +107,203 @@
         <!--================End Header Area =================-->
         
         <!--================Slider Area =================-->
-        <section class="home_banner_area">
-            <div class="container">
-            	<div class="row home_banner_inner">
-            		<div class="col-lg-8 col-md-7">
-            			<div class="left_text">
-            				<h5>Satisfaction</h5>
-            				<h3>Guaranteed</h3>
-            				<p>If you need emergency <br />repairs please call</p>
-            				<a class="tel" href="tel:01676790690">1800 456 7890</a>
-            				<a class="main_btn" href="#">Contact us</a>
-            			</div>
-            		</div>
-            		<div class="col-lg-4 col-md-5">
-            			<div class="schedule_box">
-            				<img src="img/icon/down-icon.png" alt="">
-            				<h4>Schedule</h4>
-            				<h5>an appointment</h5>
-            				<form class="form-row contact_us_form" action="contact_process.php" method="post">
-								<div class="form-group col-lg-12">
-									<input type="text" class="form-control" id="name" placeholder="Your Name">
-								</div>
-								<div class="form-group col-lg-12">
-									<input type="email" class="form-control" id="email" placeholder="Email">
-								</div>
-								<div class="form-group col-lg-12">
-									<input type="text" class="form-control" id="phone" placeholder="Phone">
-								</div>
-								<div class="form-group col-lg-12">
-									<input type="text" class="form-control" id="subject" placeholder="Services">
-								</div>
-								<div class="form-group col-lg-12">
-									<textarea class="form-control" name="message" id="message" rows="1" placeholder="Description of requirement"></textarea>
-								</div>
-								<div class="form-group col-lg-6">
-									<div class="form-group">
-										<div id="datetimepicker3" data-target-input="nearest">
-											<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" data-toggle="datetimepicker" placeholder="Best Time"/>
-										</div>
-									</div>
-								</div>
-								<div class="form-group col-lg-6">
-									<div id="datetimepicker4" data-target-input="nearest">
-										<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" data-toggle="datetimepicker" placeholder="Date"/>
-									</div>
-								</div>
-								<div class="form-group col-lg-12">
-									<button type="submit" value="submit" class="btn submit_btn">submit now</button>
-								</div>
-        					</form>
-            			</div>
-            		</div>
-            	</div>
+        <section class="main_slider_area">
+            <div id="main_slider3" class="rev_slider" data-version="5.3.1.6">
+                <ul>
+                    <li data-index="rs-1587" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="img/home-slider/slider-6.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Creative" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="img/home-slider/slider-6.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="slider_text_box">
+                            <div class="tp-caption tp-resizeme digit_text"
+                            data-x="['left','left','left','15','15']" 
+                            data-hoffset="['0','0','0','0']" 
+                            data-y="['top','top','top','top']" 
+                            data-voffset="['192','192','192','100','100']" 
+                            data-fontsize="['35','35','35','24','24']"
+                            data-lineheight="['45','45','45','34','34']"
+                            data-width="['100%']"
+                            data-height="none"
+                            data-whitespace="nowarp"
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left']">We Provide</div>
+                            
+                            <div class="tp-caption tp-resizeme first_text"
+                            data-x="['left','left','left','15','15']" 
+                            data-hoffset="['0','0','0','0']" 
+                            data-y="['top','top','top','top']" 
+                            data-voffset="['240','240','240','150','135']" 
+                            data-fontsize="['52','52','52','40','25']"
+                            data-lineheight="['62','62','62','50','35']"
+                            data-width="['640','640','640','480','300']"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left']">100% Satisfaction Guarantee<span> on Repairs</span></div>
+                             
+                            <div class="tp-caption tp-resizeme secand_text"
+                                data-x="['left','left','left','15','15']" 
+                                data-hoffset="['0','0','0','0']" 
+                                data-y="['top','top','top','top']" 
+                                data-voffset="['380','380','380','270','220']"  
+                                data-fontsize="['18','18','18','16','16']"
+                                data-lineheight="['26','26','26','26']"
+                                data-width="['570','570','570','550','400']"
+                                data-height="none"
+                                data-whitespace="normal"
+                                data-type="text" 
+                                data-responsive_offset="on"
+                                data-transform_idle="o:1;"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">We provide specialists in the following areas Residential and Commercial.
+                            </div>
+                            
+                            <div class="tp-caption tp-resizeme slider_button"
+                                data-x="['left','left','left','15','15']" 
+                                data-hoffset="['0','0','0','0']" 
+                                data-y="['top','top','top','top']" 
+                                data-voffset="['460','460','460','360','290']" 
+                                data-fontsize="['14','14','14','14']"
+                                data-lineheight="['46','46','46','46']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                                data-type="text" 
+                                data-responsive_offset="on" 
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">
+                                <a class="main_btn round" href="#">Book an Engineer</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-index="rs-1588" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="img/home-slider/slider-7.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Creative" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="img/home-slider/slider-7.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="slider_text_box">
+                            <div class="tp-caption tp-resizeme digit_text"
+                            data-x="['left','left','left','15','15']" 
+                            data-hoffset="['0','0','0','0']" 
+                            data-y="['top','top','top','top']" 
+                            data-voffset="['192','192','192','100','100']" 
+                            data-fontsize="['35','35','35','24','24']"
+                            data-lineheight="['45','45','45','34','34']"
+                            data-width="['100%']"
+                            data-height="none"
+                            data-whitespace="nowarp"
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left']">We Provide</div>
+                            
+                            <div class="tp-caption tp-resizeme first_text"
+                            data-x="['left','left','left','15','15']" 
+                            data-hoffset="['0','0','0','0']" 
+                            data-y="['top','top','top','top']" 
+                            data-voffset="['240','240','240','150','135']" 
+                            data-fontsize="['48','48','48','40','25']"
+                            data-lineheight="['58','58','58','50','35']"
+                            data-width="['680','680','680','520','400']"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                            data-textAlign="['left','left','left','left']">Comfortable with Heating and <span>Cooling System</span></div>
+                            
+                            <div class="tp-caption tp-resizeme secand_text"
+                                data-x="['left','left','left','15','15']" 
+                                data-hoffset="['0','0','0','0']" 
+                                data-y="['top','top','top','top']" 
+                                data-voffset="['380','380','335','270','220']"  
+                                data-fontsize="['18','18','18','16','16']"
+                                data-lineheight="['26','26','26','26']"
+                                data-width="['570','570','570','550','400']"
+                                data-height="none"
+                                data-whitespace="normal"
+                                data-type="text" 
+                                data-responsive_offset="on"
+                                data-transform_idle="o:1;"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">We provide specialists in the following areas Residential and Commercial.
+                            </div>
+                            
+                            <div class="tp-caption tp-resizeme slider_button"
+                                data-x="['left','left','left','15','15']" 
+                                data-hoffset="['0','0','0','0']" 
+                                data-y="['top','top','top','top']" 
+                                data-voffset="['460','460','460','360','290']" 
+                                data-fontsize="['14','14','14','14']"
+                                data-lineheight="['46','46','46','46']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                                data-type="text" 
+                                data-responsive_offset="on" 
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]">
+                                <a class="main_btn round" href="#">Book an Engineer</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <!--================End Slider Area =================-->
-        
-        <!--================About Bar Area =================-->
-        <section class="about_bar_area">
+       	
+       	<!--================About Text Area =================-->
+        <section class="about_text_area service_call_in p_100">
         	<div class="container">
-        		<div class="about_bar_text d-flex">
-        			<div class="left">
-        				<h5>Your Comfort is Our Top Priority!</h5>
-        				<h4>Our Experienced HVAC Repair Technicians are Available 24/7!</h4>
+        		<div class="row ab_text_inner">
+        			<div class="ab_text_item">
+						<h3>About Airtech Heating and Air Conditioning</h3>
+						<p>Regardless of whether you are in the market for another heater, heat siphon, A/C framework, or just require establishment, support or fix administration on your new or existing HVAC gear, our industrial facility prepared, NATE-affirmed specialized group offers a not insignificant rundown of highlights that settle on us your best decision for neighborhood HVAC administration:</p>
+					</div>
+        			<div class="col-lg-8">
+        				
+						<div class="row ab_list">
+							<div class="col-lg-7">
+								<h4>We are ....</h4>
+								<ul class="nav flex-column">
+									<li><a href="#">-   A Carrier factory-authorized HVAC dealer</a></li>
+									<li><a href="#">-   The only geothermal dealer in South Carolina</a></li>
+									<li><a href="#">-   The oldest Carrier dealer and contractor in Charleston</a></li>
+									<li><a href="#">-   Local First Member</a></li>
+									<li><a href="#">-   A BBB-accredited business with an A+ rating in 2014</a></li>
+									<li><a href="#">-   Winner of Angie’s List Super Service Award 2013</a></li>
+									<li><a href="#">-   Lowcountry Local First member</a></li>
+									<li><a href="#">-   We are 24 trucks strong and growing</a></li>
+									<li><a href="#">-   100% NATE Certified Service Department</a></li>
+									<li><a href="#">-   Available for 24-hour emergency HVAC service</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-5 d-flex justify-content-end">
+								<div class="ab_logo text-center align-self-end">
+									<img class="img-fluid" src="img/ab-logo-2.png" alt="">
+								</div>
+							</div>
+						</div>
         			</div>
-        			<a class="ab_bar_btn" href="#">Know more about us</a>
+        			<div class="col-lg-4">
+						<div class="contract_discount">
+							<h4><span>$35</span> Off Service Call</h4>
+							<h5>Cannot be combined with any<br> other offer</h5>
+							<p>Must present coupon at time of service.</p>
+							<a href="#">For new clients only</a>
+							<h6>Expire on : 01.05.2019</h6>
+						</div>
+						<a class="print" href="#">Click open in Print View</a>
+						<a class="more" href="#">Click here for more specials</a>
+					</div>
         		</div>
         	</div>
         </section>
-        <!--================End About Bar Area =================-->
+        <!--================End About Text Area =================-->
         
         <!--================Repair Service Area =================-->
-        <section class="repair_service_area p_100">
+        <section class="repair_service_area bg_shadow p_100">
         	<div class="container">
         		<div class="center_title_big text-center">
         			<h2>Air Conditioning Repair, Heating Repair & Installation<br /> Services in Your Locality</h2>
@@ -225,74 +339,33 @@
         </section>
         <!--================End Repair Service Area =================-->
         
-        <!--================Company Video Area =================-->
-        <section class="company_video_area">
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-lg-6">
-        				<div class="company_text">
-        					<div class="company_text_part">
-        						<h4>Our Company History</h4>
-        						<p>Our company was established in 2012, the owner is a master in the plumbing industry, having more than 20 years of experience in residential, commercial and industrial services. His vision of the company grew from personal concerns about customer service depleting over the years, which he witnessed first-hand in companies he worked for. </p>
-        					</div>
-        					<div class="company_text_part">
-        						<h4>Trust Our Team of Experts</h4>
-        						<p>Our Plumbing team utilizes the latest plumbing technologies, while at the same time maintaining our sense of family values when servicing your home.</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-6">
-        				<div class="youtube_video">
-        					<iframe src="https://www.youtube.com/embed/_naXMUKyy_M"></iframe>
-        				</div>
-        			</div>
+        <!--================Our Moto Area =================-->
+        <section class="our_moto_area moto_two moto_video">
+        	<div class="left_side">
+        		<img src="img/our-moto.jpg" alt="">
+        		<a class="popup-youtube" href="https://www.youtube.com/watch?v=_naXMUKyy_M"><i class="play"></i></a>
+        	</div>
+        	<div class="right_side">
+        		<div class="moto_text">
+        			<h5>Our Motto :  <span>Take Action in Daily Situations to Ensure Our Client Is Well-Informed and Pleased</span></h5>
+        			<p>At Berkeley Heating and Air Conditioning, you’ll find that you not only receive superior service but that someone is always reachable when you need us. To us, that’s all part of “Making it Happen.” Call us today to find out how we can help you with all of your HVAC needs.</p>
+        			<h4>Trust Our Team of Experts</h4>
+        			<p>Our Plumbing team utilizes the latest plumbing technologies, while at the same time maintaining our sense of family values when servicing your home.</p>
         		</div>
         	</div>
         </section>
-        <!--================End Company Video Area =================-->
+        <!--================End Our Moto Area =================-->
         
         <!--================Choosing Contract Area =================-->
-        <section class="choose_contract_area pad_top">
+        <section class="choose_contract_area choose_two pad_top">
         	<div class="container">
-        		<div class="contract_part">
-        			<div class="row">
-        				<div class="col-lg-8">
-        					<div class="contract_text">
-        						<h4>Choosing the Right HVAC Contractor</h4>
-								<p>Factory Trained Technicians: We only employ factory trained technicians, they’re the best in the industry.Your assurance that the work will be done right the first time.</p>
-								<p>Extensive Contractor Services: At Samm’s, we expect to continue our relationship long after your new equipment is installed. Our ongoing services are designed to keep your unit operat-ing at peak efficiency without disruptive breakdowns.</p>
-								<ul class="nav">
-									<li><a href="#"><img src="img/icon/check.png" alt="">Air conditioning Service</a></li>
-									<li><a href="#"><img src="img/icon/check.png" alt="">Air Conditioning maintenance</a></li>
-									<li><a href="#"><img src="img/icon/check.png" alt="">Heating Services</a></li>
-									<li><a href="#"><img src="img/icon/check.png" alt="">Heating maintenance</a></li>
-									<li><a href="#"><img src="img/icon/check.png" alt="">Air conditioning replacement</a></li>
-									<li><a href="#"><img src="img/icon/check.png" alt="">Airconditioning installation</a></li>
-									<li><a href="#"><img src="img/icon/check.png" alt="">Heating replacement</a></li>
-									<li><a href="#"><img src="img/icon/check.png" alt="">Heating installation</a></li>
-									<li><a href="#"><img src="img/icon/check.png" alt="">HVAC repair 7 emergency service</a></li>
-								</ul>
-        					</div>
-        				</div>
-        				<div class="col-lg-4">
-        					<div class="contract_discount">
-        						<h4><span>$35</span> Off Service Call</h4>
-        						<h5>Cannot be combined with any<br /> other offer</h5>
-        						<p>Must present coupon at time of service.</p>
-        						<a href="#">For new clients only</a>
-        						<h6>Expire on : 01.05.2019</h6>
-        					</div>
-        					<a class="print" href="#">Click open in Print View</a>
-        					<a class="more" href="#">Click here for more specials</a>
-        				</div>
-        			</div>
-        		</div>
         		<div class="service_part">
         			<div class="row">
         				<div class="col-lg-8">
         					<div class="service_contract_text">
         						<h4>Fair Prices and Great Service</h4>
-        						<p>If you need to repair or replace your HVAC system, call today and talk to one of our HVAC specialists. They’ll answer all your questions and arrange an appointment at your conve-nience.</p>
+        						<p>Extensive Contractor Services: At Samm’s, we expect to continue our relationship long after your new equipment is installed. Our ongoing services are designed to keep your unit oper-ating at peak efficiency without disruptive breakdowns.</p>
+        						<p>If you need to repair or replace your HVAC system, call today and talk to one of our HVAC specialists. They will arrange an appointment at your convenience.</p>
         						<ul class="nav">
         							<li><a href="#"><img src="img/icon/check-2.png" alt="">Locally Managed & Operated</a></li>
         							<li><a href="#"><img src="img/icon/check-2.png" alt="">Available 24/7</a></li>
@@ -348,46 +421,147 @@
         </section>
         <!--================End Choosing Contract Area =================-->
         
-        <!--================New Blog Area =================-->
-        <section class="new_blog_area">
+        <!--================Team Area =================-->
+        <section class="our_team_area p_100">
         	<div class="container">
-        		<div class="single_title text-center">
-        			<h2>What’s New In Blog</h2>
+        		<div class="main_title">
+        			<h2>Our Dedicated Team</h2>
+        			<p>Bring to the table win-win survival strategies to ensure proactive domination at the end of the day going forward.</p>
         		</div>
-        		<div class="row">
-        			<div class="col-lg-6">
-        				<div class="media new_blog_item">
-        					<div class="d-flex">
-        						<img src="img/blog/new-blog/n-blog-1.jpg" alt="">
+        		<div class="row our_team_inner">
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="team_item">
+        					<div class="team_img">
+        						<img class="img-fluid" src="img/team/team-1.jpg" alt="">
+        						<ul class="nav">
+        							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        						</ul>
         					</div>
-        					<div class="media-body">
-        						<a href="#"><h6>Jan 20, 2019</h6></a>
-        						<a href="#"><h4>Preparing Your HVAC System for Summer</h4></a>
-        						<p>Bring to the table win-win survival strate-gies to ensure proactive domination. At the end of the day ...</p>
-        						<a class="more_btn" href="#">Read more</a>
+        					<div class="team_text">
+        						<a href="#"><h4>Richard Joe</h4></a>
+        						<h5>AC Engineer</h5>
         					</div>
         				</div>
         			</div>
-        			<div class="col-lg-6">
-        				<div class="media new_blog_item">
-        					<div class="d-flex">
-        						<img src="img/blog/new-blog/n-blog-2.jpg" alt="">
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="team_item">
+        					<div class="team_img">
+        						<img class="img-fluid" src="img/team/team-2.jpg" alt="">
+        						<ul class="nav">
+        							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        						</ul>
         					</div>
-        					<div class="media-body">
-        						<a href="#"><h6>Jan 20, 2019</h6></a>
-        						<a href="#"><h4>Signs You May Need to Mainte-nance Your HVAC System</h4></a>
-        						<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day ...</p>
-        						<a class="more_btn" href="#">Read more</a>
+        					<div class="team_text">
+        						<a href="#"><h4>Mirano Joe</h4></a>
+        						<h5>Junior Worker</h5>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="team_item">
+        					<div class="team_img">
+        						<img class="img-fluid" src="img/team/team-3.jpg" alt="">
+        						<ul class="nav">
+        							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        						</ul>
+        					</div>
+        					<div class="team_text">
+        						<a href="#"><h4>Michale Joe</h4></a>
+        						<h5>Main Engineer</h5>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-sm-6">
+        				<div class="team_item">
+        					<div class="team_img">
+        						<img class="img-fluid" src="img/team/team-4.jpg" alt="">
+        						<ul class="nav">
+        							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        						</ul>
+        					</div>
+        					<div class="team_text">
+        						<a href="#"><h4>John Joe</h4></a>
+        						<h5>Gas  Expert</h5>
         					</div>
         				</div>
         			</div>
         		</div>
         	</div>
         </section>
-        <!--================End New Blog Area =================-->
+        <!--================End Team Area =================-->
+        
+        <!--================Choosing Contract Area =================-->
+        <section class="choose_contract_area pad_top">
+        	<div class="container">
+        		<div class="contract_part">
+        			<div class="row">
+        				<div class="col-lg-8">
+        					<div class="contract_text">
+        						<h4>Choosing the Right HVAC Contractor</h4>
+								<p>Factory Trained Technicians: We only employ factory trained technicians, they’re the best in the industry.Your assurance that the work will be done right the first time.</p>
+								<p>Extensive Contractor Services: At Samm’s, we expect to continue our relationship long after your new equipment is installed. Our ongoing services are designed to keep your unit operat-ing at peak efficiency without disruptive breakdowns.</p>
+								<ul class="nav">
+									<li><a href="#"><img src="img/icon/check.png" alt="">Air conditioning Service</a></li>
+									<li><a href="#"><img src="img/icon/check.png" alt="">Air Conditioning maintenance</a></li>
+									<li><a href="#"><img src="img/icon/check.png" alt="">Heating Services</a></li>
+									<li><a href="#"><img src="img/icon/check.png" alt="">Heating maintenance</a></li>
+									<li><a href="#"><img src="img/icon/check.png" alt="">Air conditioning replacement</a></li>
+									<li><a href="#"><img src="img/icon/check.png" alt="">Airconditioning installation</a></li>
+									<li><a href="#"><img src="img/icon/check.png" alt="">Heating replacement</a></li>
+									<li><a href="#"><img src="img/icon/check.png" alt="">Heating installation</a></li>
+									<li><a href="#"><img src="img/icon/check.png" alt="">HVAC repair 7 emergency service</a></li>
+									
+								</ul>
+        					</div>
+        				</div>
+        				<div class="col-lg-4">
+        					<div class="free_consultation">
+        						<div class="title_top">
+        							<h5>Facing Any Problem With Air Conditioner</h5>
+									<h3>Get a Free Consultation</h3>
+        						</div>
+								<form class="form-row contact_us_form" action="contact_process.php" id="contactForm" novalidate="novalidate">
+									<div class="form-group col-lg-6">
+										<input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+									</div>
+									<div class="form-group col-lg-6">
+										<input type="text" class="form-control" name="lname" id="lastname" placeholder="Last Name">
+									</div>
+									<div class="form-group col-lg-6">
+										<input type="text" class="form-control" name="number" id="phone" placeholder="Phone">
+									</div>
+									<div class="form-group col-lg-6">
+										<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+									</div>
+									<div class="form-group col-lg-12">
+										<textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+									</div>
+									<div class="form-group col-lg-12">
+										<button type="submit" value="submit" class="btn submit_btn">submit now</button>
+									</div>
+								</form>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Choosing Contract Area =================-->
         
         <!--================Client Service Area =================-->
-        <section class="client_service_area">
+        <section class="client_service_area client_logo">
         	<div class="container">
         		<div class="single_title blue text-center">
         			<h2>We Service All Makes & Models</h2>
@@ -425,7 +599,7 @@
         			</div>
         			<div class="media-body">
         				<h4>Free Estimates on Complete System Replacement</h4>
-        				<h5>Call Now <a href="tel:18004567890">1800 456 7890</a></h5>
+        				<h5>Call Now <a href="tel:4073259494">407 325 9494</a></h5>
         			</div>
         		</div>
         	</div>
@@ -443,9 +617,9 @@
         							<h3>Contact Us</h3>
         						</div>
         						<address class="footer_address">
-        							<p>Airtech Company Inc.<br /> 3648, Rorance Road, New York,<br /> SC 29170</p>
-        							<p>Phone : <a href="tel:18004567890">1800 456 7890</a></p>
-        							<p>license #M-201874</p>
+        							<p>Luis HVAC LLC.<br /> 2025, Water Tupelo Way, Ocoee,<br /> FL 34761</p>
+        							<p>Phone : <a href="tel:4073259494">407 325 9494</a></p>
+        							<p>license #CAC1820576</p>
         						</address>
         					</aside>
         				</div>
@@ -458,7 +632,6 @@
         							<li><a href="#">Home</a></li>
         							<li><a href="#">Special</a></li>
         							<li><a href="#">About Us</a></li>
-        							<li><a href="#">Our Blog</a></li>
         							<li><a href="#">Testimonials</a></li>
         							<li><a href="#">Contact Us</a></li>
         							<li><a href="#">Services</a></li>
@@ -479,7 +652,7 @@
         								<h4>24-Hour Emergency Service Available</h4>
         							</div>
         						</div>
-        						<h5>We Accepted : <img src="img/payment-card.png" alt=""></h5>
+        						<h5>We Accept : <img src="img/payment-card.png" alt=""></h5>
         					</aside>
         				</div>
         			</div>
@@ -489,11 +662,10 @@
         		<div class="container">
         			<div class="d-flex justify-content-between">
         				<div class="left">
-        					<p>Copyright © <a href="index.html">Airtech</a> <script>document.write(new Date().getFullYear());</script>. All right reserved.</p>
+        					<p>Copyright © <a href="index.html">Luis HVAC LLC.</a> <script>document.write(new Date().getFullYear());</script>. All right reserved.</p>
         				</div>
         				<div class="right">
         					<a href="#">Privacy Policy</a>
-        					<a href="#">Sitemap</a>
         				</div>
         			</div>
         		</div>
@@ -501,6 +673,52 @@
         </footer>
         <!--================End Footer Area =================-->
         
+        
+        <!--================Contact Success and Error message Area =================-->
+        <div id="success" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Thank you</h2>
+                        <p>Your message is successfully sent...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals error -->
+
+        <div id="error" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Sorry !</h2>
+                        <p> Something went wrong </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Contact Success and Error message Area =================-->
+        
+        <!--================Search Box Area =================-->
+        <div class="search_area zoom-anim-dialog mfp-hide" id="test-search">
+            <div class="search_box_inner">
+                <h3>Search</h3>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter search keywords">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="icon icon-Search"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--================End Search Box Area =================-->
         
         
         
@@ -511,6 +729,14 @@
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <!-- Rev slider js -->
+        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
         <!-- Extra Plugin js -->
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="vendors/time-date-picker/moment-with-locales.min.js"></script>
@@ -518,6 +744,13 @@
         <script src="vendors/lightbox/simpleLightbox.min.js"></script>
         <script src="vendors/isotop/imagesloaded.pkgd.min.js"></script>
         <script src="vendors/isotop/isotope.pkgd.min.js"></script>
+        <script src="vendors/nice-selector/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        
+        <!-- contact js -->
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/contact.js"></script>
         
         <script src="js/theme-dist.js"></script>
     </body>
