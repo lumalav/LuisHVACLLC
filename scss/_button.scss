@@ -59,12 +59,12 @@
 	}
 }
 .main_btn{
-	background: #ca232a;
+	background: #F15722;
 	border-radius: 3px;
 	display: inline-block;
 	color: #fff;
 	line-height: 40px;
-	border: 1px solid #ca232a;
+	border: 1px solid #F15722;
 	padding: 0px 22px;
 	font-size: 14px;
 	font-family: $pop;
@@ -72,18 +72,18 @@
 	text-transform: uppercase;
 	@include transition;
 	&:hover{
-		border-color: #ca232a;
+		border-color: #F15722;
 		background: transparent;
-		color: #ca232a;
+		color: #F15722;
 	}
 }
 .submit_btn{
-	background: #ca232a;
+	background: #F15722;
 	border-radius: 3px;
 	display: inline-block;
 	color: #fff;
 	line-height: 40px;
-	border: 1px solid #ca232a;
+	border: 1px solid #F15722;
 	padding: 0px 22px;
 	font-size: 14px;
 	font-family: $pop;
@@ -93,9 +93,9 @@
 	outline: none !important;
 	box-shadow: none !important;
 	&:hover{
-		border-color: #ca232a;
+		border-color: #F15722;
 		background: transparent;
-		color: #ca232a;
+		color: #F15722;
 	}
 }
 /* End Button Area css

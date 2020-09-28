@@ -31,12 +31,6 @@
 	.contract_discount h5 br {
 		display: none;
 	}
-	.new_blog_item .media-body {
-		padding: 17px 12px 17px 15px;
-	}
-	.new_blog_item .media-body h4 {
-		font-size: 14px;
-	}
 	.payment_widget h5 img {
 		padding-left: 0px;
 		padding-top: 10px;
@@ -137,9 +131,6 @@
 	}
 	.logo_part .logo_inner .left {
 		display: none;
-	}
-	.logo_part .logo_inner .right {
-		
 	}
 	.logo_part .logo_inner{
 		justify-content: center !important;
@@ -344,20 +335,6 @@
 	.box_testi{
 		margin-top: 30px;
 	}
-	.new_blog_item.media {
-		background: #e2e9f2;
-		margin-bottom: 30px;
-	}
-	.new_blog_item .media-body {
-		padding: 25px 40px 25px 30px;
-		align-self: center;
-	}
-	.new_blog_item .media-body h4 {
-		font-size: 18px;
-	}
-	.new_blog_area .row{
-		margin-bottom: -30px;
-	}
 	.link_widget {
 		margin-left: 0px; 
 	}
@@ -430,9 +407,6 @@
 	.right_sidebar_area{
 		margin-top: 50px;
 	}	
-	.blog_list {
-		padding-right: 0px;
-	}
 	.contact_form_area{
 		margin-top: 50px;
 	}
@@ -600,15 +574,6 @@
 	}
 	.header_area.menu_three + row, .header_area.menu_three + div, .header_area.menu_three + section {
 		margin-top: 219px;
-	}
-	.new_blog_item.media {
-		display: block;
-		background: transparent;
-		max-width: 280px;
-		margin: 0px auto 30px;
-	}
-	.new_blog_item .d-flex img {
-		width: 100%;
 	}
 	.replacement_area .media{
 		display: block;
@@ -799,9 +764,6 @@
 		columns: 1;
 		width: 100%;
 		display: block;
-	}
-	.blog_item .blog_text h4 {
-		font-size: 22px;
 	}
 	.faq_inner .accordion .card .card-header button {
 		font-size: 16px;

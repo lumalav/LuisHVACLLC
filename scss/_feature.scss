@@ -64,7 +64,7 @@
 		transform: translate(-50%, -50%);
 	}
 	h4{
-		background: #bd2433;
+		background: #F15722;
 		color: #fff;
 		margin-bottom: 0px;
 		padding: 20px 0px 16px 0px;
@@ -181,7 +181,7 @@
 		vertical-align: middle;
 		display: block;
 		h4{
-			background: #bd2433;
+			background: #F15722;
 			display: inline-block;
 			margin-bottom: 0px;
 			line-height: 60px;
@@ -198,7 +198,7 @@
 				height: 0;
 				border-style: solid;
 				border-width: 60px 0 0 45px;
-				border-color: transparent transparent transparent #bd2433;
+				border-color: transparent transparent transparent #F15722;
 			}
 		}
 	}
@@ -213,7 +213,7 @@
 }
 .b_testi{
 	h3{
-		color: #bd2433;
+		color: #F15722;
 		font-weight: bold;
 		font-size: 30px;
 		margin-bottom: 15px;
@@ -313,12 +313,12 @@
 			.submit_btn{
 				display: block;
 				width: 100%;
-				background: #e43838;
-				border-color: #e43838;
+				background: #F15722;
+				border-color: #F15722;
 				height: 48px;
 				&:hover{
 					background: #fff;
-					color: #e43838;
+					color: #F15722;
 				}
 			}
 		}
@@ -359,7 +359,7 @@
 					font-weight: bold;
 					font-style: italic;
 					font-family: $pop;
-					color: #d4482e;
+					color: #F15722;
 				}
 			}
 		}
