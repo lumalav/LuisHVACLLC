@@ -499,57 +499,6 @@
 /* End Special Area css
 ============================================================================================ */
 
-/* Tips Area css
-============================================================================================ */
-.tips_area{
-	.main_title{
-		margin-bottom: 40px;
-		h2{
-			margin-bottom: 20px;
-		}
-	}
-}
-.tips_list_inner{
-	border-bottom: 1px solid #d6d6d6;
-	p{
-		margin-top: 100px;
-		font-size: 32px;
-		line-height: 46px;
-		color: $blue;
-		font-family: $play;
-		font-style: italic;
-		max-width: 765px;
-		padding-bottom: 90px;
-	}
-}
-.tips_artical{
-	margin-bottom: 55px;
-	&:last-child{
-		margin-bottom: 0px;
-	}
-	h4{
-		color: $blue;
-		font-size: 24px;
-		font-weight: normal;
-		margin-bottom: 15px;
-	}
-	.nav{
-		li{
-			margin-bottom: 15px;
-			&:last-child{
-				margin-bottom: 0px;
-			}
-			a{
-				font-size: 18px;
-				color: $blue;
-				font-family: $pop;
-			}
-		}
-	}
-}
-/* End Tips Area css
-============================================================================================ */
-
 /* Repair System Area css
 ============================================================================================ */
 .repair_system_area{

@@ -660,10 +660,6 @@
 		max-width: 270px;
 		margin: 0px auto 50px;
 	}
-	.tips_list_inner p {
-		margin-top: 50px;
-		padding-bottom: 50px;
-	}
 }
 @media(max-width:575px){
 	.pad_top {
@@ -888,13 +884,6 @@
 	.free_es_item .media .media-body p {
 		line-height: 26px;
 		font-size: 14px;
-	}
-	.tips_artical .nav li a {
-		font-size: 16px;
-	}
-	.tips_list_inner p {
-		font-size: 26px;
-		line-height: 40px;
 	}
 	.single_title h2 {
 		font-size: 26px;

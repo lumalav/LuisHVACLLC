@@ -2072,62 +2072,6 @@ button:focus {
 
 /* End Special Area css
 ============================================================================================ */
-/* Tips Area css
-============================================================================================ */
-.tips_area .main_title {
-  margin-bottom: 40px;
-}
-
-.tips_area .main_title h2 {
-  margin-bottom: 20px;
-}
-
-.tips_list_inner {
-  border-bottom: 1px solid #d6d6d6;
-}
-
-.tips_list_inner p {
-  margin-top: 100px;
-  font-size: 32px;
-  line-height: 46px;
-  color: #051d3e;
-  font-family: "Playfair Display", serif;
-  font-style: italic;
-  max-width: 765px;
-  padding-bottom: 90px;
-}
-
-.tips_artical {
-  margin-bottom: 55px;
-}
-
-.tips_artical:last-child {
-  margin-bottom: 0px;
-}
-
-.tips_artical h4 {
-  color: #051d3e;
-  font-size: 24px;
-  font-weight: normal;
-  margin-bottom: 15px;
-}
-
-.tips_artical .nav li {
-  margin-bottom: 15px;
-}
-
-.tips_artical .nav li:last-child {
-  margin-bottom: 0px;
-}
-
-.tips_artical .nav li a {
-  font-size: 18px;
-  color: #051d3e;
-  font-family: "Poppins", sans-serif;
-}
-
-/* End Tips Area css
-============================================================================================ */
 /* Repair System Area css
 ============================================================================================ */
 .repair_system_area .center_title_big {
@@ -3900,10 +3844,6 @@ button:focus {
   padding: 70px 0px 60px 0px;
 }
 
-.client_service_area.tips_client {
-  padding: 90px 0px 120px 0px;
-}
-
 .client_service_area.client_logo {
   padding-top: 100px;
   padding-bottom: 130px;
@@ -4313,7 +4253,7 @@ button:focus {
 
 /* End Contact Area css
 ============================================================================================ */
-/* Faq Area css
+/* FAQ Area css
 ============================================================================================ */
 .faq_area .main_title {
   margin-bottom: 60px;
@@ -4483,7 +4423,7 @@ button:focus {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* End Faq Area css
+/* End FAQ Area css
 ============================================================================================ */
 /* Appiontment Area css
 ============================================================================================ */
